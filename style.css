@@ -145,20 +145,6 @@ address div {
 	margin-top: 15px;
 }
 
-.google-maps {
-    position: relative;
-    padding-bottom: 50%; // This is the aspect ratio
-    height: 0;
-    overflow: hidden;
-}
-
-.google-maps iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-}
-
 hr {
 	background: #638fb6;
     height: 1px;
@@ -176,10 +162,6 @@ hr {
 	#patenti h1,
 	#patenti > div {
 		padding: 0 20px;
-	}
-
-	.google-maps {
-		padding-bottom: 70%;
 	}
 }
 
@@ -222,10 +204,6 @@ hr {
 
 	.flex-container {
 		justify-content: center;
-	}
-
-	.google-maps {
-		padding-bottom: 80%;
 	}
 
 	iframe {
