@@ -11,10 +11,10 @@
 		<link href="style.css" rel="stylesheet">
 	</head>
 
-	<body>
+	<body itemscope itemtype="http://schema.org/LocalBusiness">
 		<header>
 			<div class="logo">
-				<img src="images/santo.png" alt="San Cristoforo"/>
+				<img src="images/santo.png" alt="San Cristoforo" itemprop="image"/>
 			</div>
 			<div class="text-right">
 				<div class="title">
@@ -28,26 +28,26 @@
 
 	  	<nav class="main-nav">
 			<a href="#patenti">Patenti</a>
-			<!-- <a href="#abilitazioni">Abilitazioni Professionali</a> -->
+			<a href="#abilitazioni">Abilitazioni Professionali</a>
 			<a href="#dove">Dove Siamo</a>
 			<a href="#contatti">Contatti</a>
 		</nav>
 
 		<div class="cover-image">
-			<img src=""/>
+			<img src="" />
 		</div>
 
 		<div class="content">
 
 			<div class="text">
-				<h3>
-					Grazie per aver visitato il nostro sito!
-				</h3>
+				<div>
+					Corsi per tutte le patenti e abilitazioni professionali.
+				</div>
 				<div>
 					Presso il nostro ufficio troverai tutte le informazioni che ti occorrono per ogni esigenza formativa.
 				</div>
 				<div>
-					<b>Giuseppe Pippia</b> vi seguirà sia nella teoria che nella pratica.
+					<b itemprop="founder">Giuseppe Pippia</b> ti seguirà sia nella teoria che nella pratica.
 				</div>
 			</div>
 
@@ -55,35 +55,35 @@
 				<h1>
 					Patenti
 				</h1>
-				<nav class="patenti">
-					<div href="#a" class="container-patente">
+				<nav class="patenti" itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+					<div href="#a" class="container-patente" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
 						<img src="images/patenti/moto.jpg" alt="Moto"/>
-						<div class="patente-desc">
-							Patenti AM, A1, A2, A
+						<div class="patente-desc" itemscope itemtype="http://schema.org/Service" itemprop="itemOffered">
+							<span itemprop="name">Patenti AM, A1, A2, A</span>
 						</div>
 					</div>
-					<div href="#b" class="container-patente">
+					<div href="#b" class="container-patente" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
 						<img src="images/patenti/patenteB.jpg" alt="Auto"/>
-						<div class="patente-desc">
-							Patente B
+						<div class="patente-desc" itemscope itemtype="http://schema.org/Service" itemprop="itemOffered">
+							<span itemprop="name">Patente B</span>
 						</div>
 					</div>
-					<div href="#be" class="container-patente">
+					<div href="#be" class="container-patente" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
 						<img src="images/patenti/patenteBE.jpg" alt="Fuoristrada"/>
-						<div class="patente-desc">
-							Patente BE
+						<div class="patente-desc" itemscope itemtype="http://schema.org/Service" itemprop="itemOffered">
+							<span itemprop="name">Patente BE</span>
 						</div>
 					</div>
-					<div href="#c" class="container-patente">
+					<div href="#c" class="container-patente" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
 						<img src="images/patenti/eurocargo.jpg" alt="Eurocargo"/>
-						<div class="patente-desc">
-							Patenti C, CE, C1, C1E, CQC
+						<div class="patente-desc" itemscope itemtype="http://schema.org/Service" itemprop="itemOffered">
+							<span itemprop="name">Patenti C, CE, C1, C1E, CQC</span>
 						</div>
 					</div>
-					<div href="#d" class="container-patente">
+					<div href="#d" class="container-patente" itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
 						<img src="images/patenti/bus.jpg" alt="Bus"/>
-						<div class="patente-desc">
-							Patenti D, DE, D1, D1E, CQC
+						<div class="patente-desc" itemscope itemtype="http://schema.org/Service" itemprop="itemOffered">
+							<span itemprop="name">Patenti D, DE, D1, D1E, CQC</span>
 						</div>
 					</div>
 				</nav>
@@ -91,13 +91,13 @@
 				<div class="times text">
 					Corsi di teoria per patenti A e B:
 
-					<div>
+					<div itemprop="openingHours" content="Mo 19:00-20:00">
 						Lunedì: 19:00-20:00
 					</div>
-					<div>
+					<div itemprop="openingHours" content="Wed 19:00-20:00">
 						Mercoledì: 19:00-20:00
 					</div> 
-					<div>
+					<div itemprop="openingHours" content="Fri 19:00-20:00">
 						Venerdì: 19:00-20:00
 					</div> 
 				</div>
@@ -258,19 +258,114 @@
 
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 				</div>
+-->
 			</div>
 
 			<div id="abilitazioni">
 				<h1>
 					Abilitazioni Professionali
 				</h1>
+				
+				<div class="text">
+					Per questi corsi è prevista una prova teorica e una pratica. È previsto il rilascio di attestato e patentino.
+
+					<ul itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">Macchine movimento terra</span>
+							</div>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">Muletto</span>
+							</div>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">Carrelli elevatori</span>
+							</div>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">Gru autocarro</span>
+							</div>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">Piattaforme di lavoro (ple)</span>
+							</div>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+								<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+							<span itemprop="name">Addetti alla conduzione di pompe per il calcestruzzo</span>
+							</div itemscope>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">Trattori agricoli o forestali</span>
+							</div>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+								<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+							<span itemprop="name">Selvicoltura</span>
+							</div itemscope>
+						</li>
+					</ul>
+				</div>
+
+				<h1>
+					Corsi di Sicurezza sul Lavoro
+				</h1>
 
 				<div class="text">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-				</div>
-			</div>
-		-->
+					Questi corsi prevedono una prova e il rilascio di un attestato al suo superamento.
 
+					<ul itemprop="hasOfferCatalog" itemscope itemtype="http://schema.org/OfferCatalog">
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">Antincendio rischio basso</span>
+							</div>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">Antincendio rischio medio</span>
+							</div>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">Antincendio rischio alto</span>
+							</div>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">RSPP rischio basso</span>
+							</div>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">RSPP rischio medio</span>
+							</div itemscope>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">RSPP rischio alto</span>
+							</div>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">RLS</span>
+							</div>
+						</li>
+						<li itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer">
+							<div itemscope itemtype="http://schema.org/Service" itemprop="itemOffered" itemscope>
+								<span itemprop="name">Selvicoltura</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		
 			<div id="dove">
 				<h1>
 					Dove Siamo
@@ -283,28 +378,33 @@
 
 		<footer id="contatti">
 			<address>
-				<div>
+				<div itemprop="name">
 					Autoscuola San Cristoforo
 				</div>
-				<div>
-					Via Roma, 86 - 09070 Bonarcado (OR)
+				<div itemprop="vatID">
+					Partita IVA 01089460958
+				</div>
+				<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+					<div>
+						<span itemprop="streetAddress">Via Roma, 86</span> - <span itemprop="postalCode">09070</span> <span itemprop="addressLocality">Bonarcado (OR)</span>
+					</div>
 				</div>
 				<div>
-					<a href="tel:+39078356573">0783 56573</a>
+					<a href="tel:+39078356573" itemprop="telephone">0783 56573</a>
 				</div>
 				<div>
-					<a href="tel:+393406297346">340 6297346</a>
+					<a href="tel:+393406297346" itemprop="telephone">340 6297346</a>
 				</div>
 				<div>
-					<a href="mailto:autoscuolasancristoforo@outlook.it">autoscuolasancristoforo@outlook.it</a>
+					<a href="mailto:autoscuolasancristoforo@outlook.it" itemprop="email">autoscuolasancristoforo@outlook.it</a>
 				</div>
 			</address>
 
 			<!-- Facebook -->
-			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAutoscuola-San-Cristoforo-674444349303514%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=115457209307481" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAutoscuola-San-Cristoforo-674444349303514%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=115457209307481" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"></iframe>
 		</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="script.js"></script>
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
