@@ -6,6 +6,10 @@ body {
 	margin: auto;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 header, 
 nav,
 .patenti,
@@ -20,7 +24,11 @@ footer,
 
 ul {
 	list-style-type: none;
-    padding-left: 10px;
+    padding-left: 0;
+}
+
+img {
+	max-width: 100%;
 }
 
 #patenti {
@@ -83,6 +91,11 @@ h1,
 	color: #314e68;
 }
 
+h2 {
+	font-size: 20px;
+	margin-top: 50px;
+}
+
 .long-desc img {
 	max-width: calc(50% - 15px);
 	padding-right: 15px;
@@ -90,6 +103,14 @@ h1,
 
 .text {
 	line-height: 30px;
+}
+
+.text a {
+	color: #4a779f;
+}
+
+.text a:hover {
+	color: rgba(74, 119, 159, .8);
 }
 
 .patenti {
@@ -161,6 +182,22 @@ hr {
 	padding: 0;
 }
 
+.abilitazioni {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+
+.side-element {
+	width: 50%;
+	height: auto;
+	padding-right: 15px;
+}
+
+.large {
+	font-size: 18px;
+}
+
 @media screen and (max-width: 1000px) {
 	.content > div,
 	footer,
@@ -201,7 +238,8 @@ hr {
 	}
 
 	.reduce-width,
-	.long-desc img {
+	.long-desc img,
+	.side-element {
 		max-width: 100%;
 		padding: 0;
 		width: 100%;
