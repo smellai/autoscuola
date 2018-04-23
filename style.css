@@ -205,6 +205,13 @@ hr {
 	#patenti > div {
 		padding: 0 20px;
 	}
+
+	/* footer {
+		address,
+		iframe {
+			width: 100%;
+		}
+	} */
 }
 
 @media screen and (max-width: 660px) {
