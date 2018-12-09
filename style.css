@@ -122,12 +122,6 @@ h2 {
     letter-spacing: 1px;
 }
 
-@media screen and (max-width: 820px) {
-	.container-patente {
-		width: 100%;
-	}
-}
-
 .container-patente {
 	flex: 1 1 calc(100% / 5);
 	display: flex;
@@ -140,7 +134,8 @@ h2 {
 	margin: 15px 15px 5px;
 }
 
-.content > div {
+.content > div,
+.recap {
 	margin-top: 30px;
 }
 
@@ -159,6 +154,14 @@ footer a {
 
 footer a:hover {
 	color: #cbdae7;
+}
+
+.contacts-block:nth-child(2) {
+	text-align: right;
+}
+
+address {
+	margin: 20px 0;
 }
 
 address div {
@@ -198,9 +201,28 @@ hr {
 	font-size: 18px;
 }
 
+@media screen and (max-width: 820px) {
+	.container-patente {
+		flex: 1 1 100%;
+		margin: 15px 0;
+	}
+
+	address {
+		width: 100%;
+	}
+
+	footer	{
+		justify-content: center;
+	}
+
+	.contacts-block:nth-child(n) {
+		margin: 0 15px;
+		text-align: center;
+	}
+}
+
 @media screen and (max-width: 1000px) {
 	.content > div,
-	footer,
 	#patenti h1,
 	#patenti > div {
 		padding: 0 20px;
@@ -228,20 +250,10 @@ hr {
 		font-size: 16px;
 	}
 
-	nav a {
+	.main-nav a {
 		width: 100%;
 		text-align: center;
 		padding: 15px;
-	}
-
-	address {
-		width: 100%;
-		margin-bottom: 20px;
-	}
-
-	footer	{
-		padding-bottom: 20px;
-		text-align: center;
 	}
 
 	.reduce-width,
