@@ -2,16 +2,21 @@ body {
 	/*background-color: #eef3f7;*/
 	color: #575757;
 	font-family: 'Lucida Grande', arial, sans-serif;
-	max-width: 1000px;
-	margin: auto;
+	margin: 0;
 }
 
 * {
 	box-sizing: border-box;
 }
 
+.main-nav-content,
+.content {
+	margin: auto;
+	max-width: 1000px;
+}
+
 header, 
-nav,
+.main-nav-content,
 .patenti,
 footer,
 .flex-container {
@@ -20,6 +25,10 @@ footer,
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 15px;
+}
+
+header {
+	margin: 0 50px;
 }
 
 ul {
@@ -145,7 +154,7 @@ footer {
 	color: white;
 	font-size: 15px;
 	margin-top: 50px;
-	padding: 15px;
+	padding: 15px 50px;
 }
 
 footer a {
