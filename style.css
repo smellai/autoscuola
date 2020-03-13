@@ -37,7 +37,7 @@ ul {
 }
 
 img {
-	max-width: 100%;
+	m-width: 100%;
 }
 
 #patenti {
@@ -92,7 +92,7 @@ a {
 }
 
 .cover-image img {
-	max-width: 100%;
+	min-width: 100%;
 }
 
 h1,
